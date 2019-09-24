@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/ 
+Allow: /about/
+Allow:/finance/
+Disallow: /js/
+Disallow: /css/
+Disallow: /medias/
+Disallow: /libs/
+
+Sitemap: https://aifans.cc/sitemap.xml
+Sitemap: https://aifans.cc/baidusitemap.xml

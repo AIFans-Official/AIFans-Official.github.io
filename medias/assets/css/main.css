@@ -1,0 +1,31 @@
+/* body {
+  background-color: #eff4f7;
+  color: #000;
+  font-family: 'Titillium Web', Arial, Helvetica, sans-serif
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 600;
+}
+
+.content-area {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.box {
+  /* border: #777 solid 5px; */
+  /* background-color: #eff4f7; */
+  padding: 10px;
+  margin: 5px
+}
+
+/* .dataTables_scrollBody {
+  height: 350px !important;
+} */
