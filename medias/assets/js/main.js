@@ -95,7 +95,11 @@ function drawCharts() {
 			}
 		},
 		labels: couLabels,
-
+		xaxis: {
+			labels: {
+				hideOverlappingLabels: true
+			}
+		}
 	}
 	var mixChartData = new ApexCharts(
 		document.querySelector("#mixChart"),
@@ -107,7 +111,7 @@ function drawCharts() {
 	var inAnsData = {
 		chart: {
 			type: 'donut',
-			width: '80%'
+			width: '90%'
 		},
 		dataLabels: {
 			enabled: true,
@@ -117,7 +121,7 @@ function drawCharts() {
 				donut: {
 					size: '70%',
 				},
-				offsetY: 20,
+				offsetY: 30,
 			},
 			stroke: {
 				colors: undefined
@@ -133,8 +137,8 @@ function drawCharts() {
 		series: ansIn,
 		labels: ["支付宝", "微信", "哔哩哔哩", "PayPal", "其他"],
 		legend: {
-			position: 'left',
-			offsetY: 80
+			position: 'top',
+			offsetY: 10
 		}
 	}
 	var inAnsData = new ApexCharts(
