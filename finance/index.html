@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="关于, AIFans,Kizuna AI,虚拟YouTuber,虚拟UP,Virtual YouTuber,Official,官方">
-    <meta name="description" content="关于 | AIFans官方网站">
+    <meta name="keywords" content="财务报表, AIFans,Kizuna AI,虚拟YouTuber,虚拟UP,Virtual YouTuber,Official,官方">
+    <meta name="description" content="财务报表 | AIFans官方网站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>关于 | AIFans官方网站</title>
+    <title>财务报表 | AIFans官方网站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -228,7 +228,84 @@
                 <div class="card">
                     <div class="card-content">
                         <div class="row">
-                                <p align=center>页面建设中，敬请期待</p>
+                                <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>                
+                                <link href="/medias/assets/css/libs/datatables.min.css" rel="stylesheet">
+                                <script src="/medias/assets/js/libs/datatables.min.js" type="text/javascript"></script>
+                                <link href="/medias/assets/css/main.css" rel="stylesheet">
+    
+                                <div id="output"></div>
+                                <div id="wrapper" data-aos="fade-up">
+                                    <div class="content-area">
+                                            <div class="container-fluid">
+                                                    <div class="main">
+                                                        <div class="row" >
+                                                            <div class="col s12" data-aos="fade-up">
+                                                                <div class="box">
+                                                                    <div id="mixChart"> </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col s12 m8" data-aos="fade-up">
+                                                                <div class="box">
+                                                                <div id="inAns"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col s12 m4" data-aos="fade-up">
+                                                                <div class="box">
+                                                                    <div id="statistics">
+                                                                        <p id="sumIn"></p>
+                                                                        <p id="sumOut"></p>
+                                                                        <p id="sumDiff"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col s12" data-aos="fade-up">
+                                                                <div class="box">
+                                                                    <p>收入详单</p>
+                                                                    <div class="table-responsive">
+                                                                        <table id="inTable" border="1" class="table table-bordered table-sm">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>日期</th>
+                                                                                    <th>用户</th>
+                                                                                    <th>平台</th>
+                                                                                    <th>金额</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col s12">
+                                                                <div class="box">
+                                                                    <p>支出详单</p>
+                                                                    <div class="table-responsive">
+                                                                        <table id="outTable" border="1" class="table table-bordered table-sm">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>日期</th>
+                                                                                    <th>使用者</th>
+                                                                                    <th>用途</th>
+                                                                                    <th>金额</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <script src="https://cdn.bootcss.com/xlsx/0.15.1/xlsx.core.min.js" type="text/javascript"></script>
+                                        <script src="https://cdn.bootcss.com/apexcharts/3.8.6/apexcharts.min.js" type="text/javascript"></script>
+                                        <script src="/medias/assets/js/main.js" type="text/javascript"></script>
                         </div>
                     </div>
                 </div>
