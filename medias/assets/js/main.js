@@ -54,7 +54,7 @@ function drawCharts() {
 		alipayIn.push.apply(alipayIn, [dataJson[2][i].ALIPAY]);
 		wechatIn.push.apply(wechatIn, [dataJson[2][i].WECHAT]);
 		bilibiliIn.push.apply(bilibiliIn, [dataJson[2][i].BILIBILI]);
-		paypalIn.push.apply(paypalIn, [dataJson[2][i].WECHAT]);
+		paypalIn.push.apply(paypalIn, [dataJson[2][i].PAYPAL]);
 		otherIn.push.apply(otherIn, [dataJson[2][i].OTHER]);
 	}
 	var ansIn = new Array()
@@ -173,7 +173,12 @@ function drawTables() {
 	$('#inTable, #outTable').DataTable({
 		bFilter: false,
 		bLengthChange: false,
-		ordering: false,
+		"orderFixed":[
+			[0, "desc"],
+			[1, "desc"],
+			[2, "desc"],
+			[3, "desc"]
+		],
 		language: {
 			url: '/medias/assets/lang/zh-cn.json'
 		}
